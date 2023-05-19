@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css.css" />
+  <title>aNIMAÇÃO</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+
+    <div class="signin-signup">
+      
+      
+      <form action="#" class="sign-in-form">
+       
+        <div id="caixaInfo">
+
+        <center>
+          <h1 id="tituloDoTrablho">Solicitação de Orçamento</h1>
+        </center>
+       
+        <h4 id="subTituloDoTrablho">Para solicitar um serviço, clique no botão a baixo</h4>
+
+        <img src="imagens/naty.svg" alt="" id="naty">
+        <a href="cadastro.html">cadastrar sua conta</a>
+        <button class="btn transparent" id="sign-up-btn">Proximo</button>
+      </div>
+      </form>
+
+      <form class="sign-up-form" onsubmit="event.preventDefault(), fazerLogin()">
+
+        <div class="caixaDosInputs">
+          
+          <h2 class="title">Login:</h2>
+
+          <input type="text" name="" id="email" placeholder="email" class="teste">
+
+          <label for="nacionalidade"></label>
+          <input type="text" name="" id="senha" placeholder="senha" class="">
+        </div>
+
+        <img src="imagens/My project-1.png" alt="" id="eu">
+
+
+        <div id="caixa">
+        <button class="btn transparent" id="sign-in-btn">voltar</button>
+        <button class="btn transparent" id="sign-in-btn2" onclick="fazerLogin()">LOGAR</button>
+      </div>
+     
+      </form>
+
+    </div>
+
+
+    <script src="js.js"></script>
+</body>
+
+</html>

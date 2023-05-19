@@ -1,0 +1,889 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+body{
+  background-image: linear-gradient(80deg,  #000000  ,#000000 );
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(80deg, #081b17 , #1a1120 );
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+
+.signin-signup {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 75%;
+  width: 50%;
+  transition: 1s 0.7s ease-in-out;
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s 0.7s;
+}
+
+form.sign-up-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+form.sign-in-form {
+  z-index: 2;
+}
+
+
+.btn:hover {
+  background-color: #4d84e2;
+}
+.panels-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  height: 1700px;
+  width: 1800px;
+  right: 60%;
+  transform: translateY(-50%);
+  background-image: linear-gradient(80deg,  #714a91  ,#1e8670);
+  transition: 1.8s ease-in-out;
+  border-radius: 100%;
+  z-index: 6;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 6;
+}
+
+.left-panel {
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+}
+
+.right-panel {
+  pointer-events: none;
+  padding: 3rem 12% 2rem 17%;
+}
+
+.panel .content {
+  color: #fff;
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 0.6s;
+}
+
+.btn.transparent {
+  margin: 0;
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+
+/* ANIMATION */
+.container.sign-up-mode:before {
+  transform: translate(100%, -50%);
+  right: 42%;
+}
+
+.container.sign-up-mode .left-panel .image,
+.container.sign-up-mode .left-panel .content {
+  transform: translateX(-800px);
+}
+
+.container.sign-up-mode .signin-signup {
+  left: 25%;
+}
+
+.container.sign-up-mode form.sign-up-form {
+  opacity: 1;
+  z-index: 2;
+}
+
+.container.sign-up-mode form.sign-in-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+.container.sign-up-mode .right-panel .image,
+.container.sign-up-mode .right-panel .content {
+  transform: translateX(0%);
+}
+
+.container.sign-up-mode .left-panel {
+  pointer-events: none;
+}
+
+.container.sign-up-mode .right-panel {
+  pointer-events: all;
+}
+
+
+
+
+#sign-in-btn{
+  width: 100px;
+  height: 80px;
+  font-size: 20px;
+  border-radius: 50px;
+  position: relative;
+  margin: 0;
+  margin-top: 22%;
+  box-shadow: 5px 5px 40px #a36dcf ;
+  margin-left: -60%;
+}
+
+.caixaDosInputs h2{
+font-size: 280%;
+margin-left: 165px;
+}
+
+.caixaDosInputs{
+  margin-top: -100%;
+}
+
+#caixaInfo{
+  margin-top: 5%;
+}
+
+#caixaInfo img{
+  margin-left: 150px;
+}
+
+#caixaInfo button{
+  margin-left: 280px;
+}
+
+.caixaDosInputs input{
+ width: 76%;
+ height: 25%;
+ border-radius: 50px;
+ background: #222222;
+ border: solid #858585;
+font-size: 26px;
+cursor: pointer;
+padding-left: 20px;
+margin: 20px;
+
+}
+
+h1{
+  font-size: 60px;
+  margin-top: -10px;
+  margin-left: -150px;
+}
+
+
+#tituloDoTrablho{
+  font-size: 80px;
+}
+
+#subTituloDoTrablho{
+  font-size: 35px;
+  margin: 15px;
+}
+
+.btn.transparent{
+  width: 300px;
+  height: 80px;
+  font-size: 20px;
+  border-radius: 50px;
+  margin-top: 3%;
+  box-shadow: 5px 5px 40px #11473c;
+  cursor: pointer;
+
+}
+
+#sign-in-btn2{
+  margin-left: 10px;
+  width: 200px;
+  margin: 30px;
+  width: 300px;
+  height: 80px;
+  font-size: 20px;
+  border-radius: 50px;
+  position: relative;
+  margin-top: 3%;
+  box-shadow: 5px 5px 40px #a36dcf ;
+  cursor: pointer;
+}
+
+#naty{
+  width: 600px;
+  margin: 50px;
+}
+
+#caixa{
+  float: left;
+  margin: -30px;
+  margin-left: 44%;
+}
+
+#eu{
+  position: absolute;
+  margin-top: -55%;
+  margin-left: 120%;
+ 
+}
+
+a{
+  margin-left: -47%;
+}
+
+
+
+#cadastroo{
+  margin-left: 100px;
+}
+
+
+
+
+.teste2 {
+  width: 40%;
+  margin: 10px;
+  height: 10%;
+  margin-left: 15%;
+  border-radius: 5%;
+}
+
+
+
+.caixaDosInputs2 h2{
+font-size: 280%;
+margin-left: 165px;
+
+}
+
+.caixaDosInputs2{
+  margin-top: -110%;
+}
+
+.caixaDosInputs2 input{
+  width: 66%;
+  height: 25%;
+  border-radius: 50px;
+  background: #222222;
+  border: solid #858585;
+ font-size: 26px;
+ cursor: pointer;
+ padding-left: 20px;
+ margin: 20px;
+ margin-left: 10%;
+
+}
+
+
+
+
+#tituloDoTrablho{
+  font-size: 80px;
+}
+
+#subTituloDoTrablho2{
+  font-size: 35px;
+  margin: 15px;
+  margin-left: 52px;
+}
+
+.btn.transparent{
+  width: 300px;
+  height: 80px;
+  font-size: 20px;
+  border-radius: 50px;
+  margin-top: 3%;
+  box-shadow: 5px 5px 40px #11473c;
+  cursor: pointer;
+
+}
+
+#caixa2{
+  margin-top: 20px;
+  margin-left: 50%;
+}
+
+/*BEM VINDO DO SITE*/
+
+#telaPrincipal{
+  background-image: linear-gradient(80deg, #0a201b , #201427 );
+}
+
+/*Header*/
+@import url('httls://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+header {
+  background-image: linear-gradient(80deg,  #714a91  ,#1e8670);
+  box-shadow: 2px 2px 30px #0f4596;
+    border-radius: 0px 0px 2000px 2000px;
+
+}
+
+/*POSIÇÃO DOS ITENS DO HEADER*/
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+#tituloBemVindo{
+  margin-left: 18%;
+}
+
+.caixaDeOpcoes{
+  width: 380px;
+  height: 350px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  float: left;
+  margin-top: 7%;
+  margin-left: 80px;
+  border: solid #6a8cc777;
+  border-radius: 40px;
+  box-shadow: 3px 3px 40px #315d99;
+  background-image: linear-gradient(80deg,  #c2b9ca  ,#6780b4);
+}
+
+footer{
+  background-image: linear-gradient(80deg,  #714a91  ,#1e8670);
+  box-shadow: 2px 2px 30px #0f4596;
+  border-radius: 2000px 2000px 0px 0px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+.opcoesTitulo{
+  margin-top: 20px;
+  font-size: 30px;
+ 
+}
+
+#relogar{
+  margin-left: 42%;
+  margin-top: 5%;
+}
+
+.icones{
+  width: 180px;
+  margin-top: 50px;
+}
+#icone{
+  margin-left: 100px;
+}
+
+.caixaDeOpcoes a{
+  margin-left: 1px;
+}
+
+#btnVoltar{
+  margin-top: 31.5%;
+  margin-left: -130px;
+}
+
+.caixaSolicitacao input{
+  width: 600px;
+  height: 65px;
+  border-radius: 50px;
+  background: #222222;
+  border: solid #858585;
+ font-size: 26px;
+ cursor: pointer;
+ padding-left: 20px;
+ margin: 25px;
+ display: block;
+
+}
+
+#salvarSolicitacao{
+  margin: 55px;
+  margin-left: 14%;
+  margin-top: -3px;
+  
+}
+
+.caixaSolicitacao{
+  margin-left: 100px;
+  margin-top: 5%;
+}
+
+.titleSolicitacao{
+  font-size: 45px;
+  margin-left: 35px;
+}
+
+#pessoas{
+  width: 700px;
+  margin: 50px;
+}
+
+.imagemP{
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 5%;
+}
+
+#linkImprimir{
+  font-size: 25px;
+  margin-left: -55%;
+  color: rgb(236, 236, 236);
+}
+
+#imgVoltar{
+  width: 65px;
+  position: absolute;
+  margin-left: 80px;
+  margin-top: -19px;
+  
+}
+
+.v{
+  margin: 2%;
+  position: absolute;
+}
+
+#header2{
+  background-image: linear-gradient(80deg,  #714a91  ,#1e8670);
+  box-shadow: 2px 2px 30px #0f4596;
+  border-radius: 2000px 2000px 0px 0px;
+  bottom: 0;
+  width: 100%;
+  
+  position: relative;
+}
+
+#tituloSolicitar{
+  margin-left: 36%;
+}
+
+#livro{
+  border: solid;
+  width: 40%;
+  height: 730px;
+  margin-left: 7%;
+  margin-top: 25px;
+  background-image: linear-gradient(80deg,  #998ebd  ,#6780b4);
+  border-radius: 50px;
+  margin: 5%;
+}
+
+#livro h2{
+  font-size: 40px;
+  margin-left: 37%;
+  margin-top: 15px;
+}
+
+
+#bolha{
+  width: 18%;
+  position: absolute;
+  margin-top: -15%;
+  margin-left: 45%;
+}
+
+#bolha2{
+  width: 16%;
+  position: absolute;
+  margin-top: -30%;
+  margin-left: 46%;
+}
+
+#bolha3{
+  width: 10%;
+  position: absolute;
+  margin-top: -38.5%;
+  margin-left: 47%;
+}
+#bolha4{
+  width: 10%;
+  position: absolute;
+  margin-top: -45%;
+  margin-left: 53%;
+}
+
+#movimentarBolhas{
+  margin-left: 5%;
+}
+
+#id{
+  position: absolute;
+  width: 24%;
+  height: 7%;
+  border-radius: 50px;
+  background: #222222;
+  border: solid #858585;
+ font-size: 26px;
+ cursor: pointer;
+ padding-left: 20px;
+ margin: 20px;
+ margin-left: 70%;
+ margin-top: -30%;
+}
+
+#caixaId{
+  font-size: 30px;
+  margin-left: 70%;
+  margin-top: -33%;
+  position: absolute;
+}
+
+#buscarDados{
+  margin-left: 74%;
+  margin-top: -23%;
+  position: absolute;
+}
+
+#livro span{
+font-size: 30px;
+}
+
+#imprimirOficial{
+margin-left: 270px;
+width: 200px;
+margin-top: 45px;
+position: relative;
+}
+
+#caixaImprimir p{
+  font-size: 25px;
+}
+
+#titulosdeletar{
+  margin-left: 40%;
+}
+
+#deletarTitulo{
+  font-size: 40px;
+  position: absolute;
+  margin-top: 550px;
+  margin-left: 15%;
+}
+
+#mudarInfo{
+  font-size: 40px;
+  position: absolute;
+  margin-top: 550px;
+  margin-left: 65%;
+
+}
+
+
+
+#lixeirao{
+  width: 280px;
+  margin-top: 65px;
+  position: absolute;
+  margin-left: 29%;
+
+}
+
+
+
+
+
+#bolaLixo2{
+  width: 720px;
+  height:420px;
+  background-image: linear-gradient(80deg,  #443253  ,#165c4d);
+  box-shadow: 2px 2px 30px #2d476e;
+  position: fixed;
+  margin-left: 55%;
+  border-radius: 1500px 0px 1500px 0px;
+}
+
+
+#bolaLixo{
+  width: 720px;
+  height:420px;
+  background-image: linear-gradient(80deg,  #443253  ,#165c4d);
+  box-shadow: 2px 2px 30px #2d476e;
+  position: fixed;
+  margin-left: 55%;
+  margin-top: -8%;
+  border-radius: 680px 500px 740px 0px;
+}
+.contaA{
+  font-size: 25px;
+  margin-left: 36px;
+}
+
+#refazer{
+  width: 550px;
+  height:500px;
+  background-image: linear-gradient(80deg,  #165c4d  ,#443253 );
+  box-shadow: 2px 2px 30px #2d476e;
+  margin-top: 22%;
+  margin-left: 70%;
+  border-radius: 680px 0px 0px 0px;
+  position: absolute;
+
+}
+
+#refazerimg{
+  width: 200px;
+  margin-top: 150px;
+  margin-left: 45%;
+}
+
+#refazerFormularioInput{
+  margin-top: -65px;
+}
+
+.r{
+  margin-left: 60%;
+  margin-top: -35%;
+  position: absolute;
+
+  width: 400px;
+  height: 65px;
+  border-radius: 50px;
+  background: #222222;
+  border: solid #858585;
+ font-size: 26px;
+ cursor: pointer;
+
+ display: block;
+}
+
+.caixaDosInputs3 input{
+  width: 600px;
+    height: 65px;
+    border-radius: 50px;
+    background: #222222;
+    border: solid #858585;
+    font-size: 26px;
+    cursor: pointer;
+    padding-left: 20px;
+    margin: 25px;
+    display: block;
+}
+
+.caixaDosInputs3{
+  margin-top: 13%;
+  margin-left: 40px;
+  position: absolute;
+  font-size: 21px;
+}
+
+
+.caixaDosInputs4 input{
+  width: 600px;
+    height: 65px;
+    border-radius: 50px;
+    background: #222222;
+    border: solid #858585;
+    font-size: 26px;
+    cursor: pointer;
+    padding-left: 20px;
+    margin: 25px;
+    display: block;
+}
+
+.caixaDosInputs4{
+  margin-top: 10%;
+  margin-left: 64%;
+}
+
+
+
+#Renovar{
+  margin-left: 68%;
+  position: absolute;
+  margin-top: -0.1px;
+}
+
+#cadastroo2{
+  margin-left: 30px;
+}
+
+#amizade{
+  position: absolute;
+  width: 220px;
+  margin-left: 42%;
+  margin-top: -15%;
+}
+
+#senhapng{
+  position: absolute;
+  width: 250px;
+  margin-left: 72%;
+  margin-top: 7%;
+}
+
+#id{
+  margin-top: 2%;
+  margin-left: 1%;
+  width: 600px;
+}
+
+#botaotops{
+  margin-top: 7%;
+  position: absolute;
+}
+
+#botaotops2{
+  position: absolute;
+margin-top: -30%;
+  width: 300px;
+ height: 50px;
+ border-radius: 50px;
+ background: #222222;
+ border: solid #858585;
+font-size: 26px;
+cursor: pointer;
+margin-left: 63%;
+}
+
+#cadastroSelecione{
+  position: absolute;
+  margin-left: 58%;
+  margin-top: -38%;
+  font-size: 25px;
+  color: #b8abc2;
+}
+
+#imgAtualiza{
+  background: transparent;
+  border: 0;
+cursor: pointer;
+margin-left: 130px;
+margin-top: -20px;
+}
+
+#j{
+  position: absolute;
+  margin-top: 65%;
+  font-size: 30px;
+  margin-left: 68px;
+  
+}
+
+#botaoCadeado{
+  cursor: pointer;
+  margin-left: 50px;
+  background: transparent;
+  border: none;
+}
+
+#h{
+  position: absolute;
+  font-size: 22px;
+  margin-left: 42%;
+  margin-top: -40px;
+}
+
+#mm{
+  margin-top: -29%;
+  position: absolute;
+  margin-left: 68%;
+
+}
+
+#mm input{
+  position: absolute;
+    width: 530px;
+   height: 70px;
+   border-radius: 50px;
+   border: solid #858585;
+  font-size: 26px;
+  cursor: pointer;
+  margin-left: 63%;
+}
+
+#perfilImg{
+  width: 320px;
+  height:320px;
+  background-image: linear-gradient(80deg,  #a176c3  ,#2cc9a7);
+  box-shadow: 2px 2px 30px #2d476e;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 43%;
+  border-radius: 1000px ;
+}
+
+#l{
+  width: 220px;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+#natyy{
+  font-size: 50px;
+  position: absolute;
+  margin-top: 23%;
+  margin-left: 41%;
+}
+
+#linha{
+  width: 100%;
+  height:5px;
+  background-image: linear-gradient(80deg,  #a176c3  ,#2cc9a7);
+  box-shadow: 2px 2px 30px #2d476e;
+  margin-top: 550px;
+}
+
+
+.Historico{
+  width: 750px;
+  height: 80px;
+  background-image: linear-gradient(80deg,  #9169af  ,#279980);
+  box-shadow: 2px 2px 30px #2d476e;
+  margin-left: 31%;
+  border-radius: 100px;
+  border: solid #1a1120e1;
+  margin: 20px; 
+ 
+}
+
+#resumo {
+margin-left: 30%;
+margin-top: 5%;
+}
+
+#resumo a{
+  text-decoration: none;
+}
+
+#suaAtividade{
+  font-size: 40px;
+  margin-left: 16%;
+}
+

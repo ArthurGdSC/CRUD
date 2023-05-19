@@ -1,0 +1,23 @@
+{
+  "cadastros": [
+    {
+      "email": "gomesdasilvacruza@gmail.com",
+      "senha": "22",
+      "cpf": "49460432840",
+      "id": 2
+    }
+  ],
+  "solicitacao": [
+    {
+      "nome": "Natallyn",
+      "sobrenome": "Yamaguchi Cruz",
+      "telefone": "1234-4569",
+      "email": "natallyn@gmail.com",
+      "servico": "confeiteira",
+      "descricaoDoServico": "é um ramo da Gastronomia focado no preparo, decoração e apresentação de pratos doces, como bolos, tortas, pudins e biscoitos",
+      "orcamento": "R$ 500.00",
+      "prazo": "05/06/20023",
+      "id": 1
+    }
+  ]
+}
